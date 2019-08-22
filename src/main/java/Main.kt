@@ -12,8 +12,10 @@ import java.io.File
 import java.lang.Exception
 import javax.imageio.ImageIO
 
-fun main (args: Array<String>?) {
-    if (args != null && !args.hasArgs(2)) {
+fun main (args: Array<String>) {
+    println("starting")
+    if (args.hasArgs(2)) {
+        println("building")
         val contents = args[0]
         val fileName = args[1]
         val deputyFileName = "jpg"
@@ -22,6 +24,7 @@ fun main (args: Array<String>?) {
 
         ImageIO.write(qrCodeImage, deputyFileName, outputFile)
     }
+    println("complete")
 }
 
 
