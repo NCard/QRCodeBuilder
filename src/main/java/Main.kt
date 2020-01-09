@@ -14,13 +14,13 @@ import javax.imageio.ImageIO
 
 fun main (args: Array<String>) {
     println("starting")
-    if (args.hasArgs(2)) {
+    if (args.atLease(1)) {
         println("building")
-        val contents = args[0]
-        val fileName = args[1]
+        val qrCodeArgs = QRCodeArgs()
+        qrCodeArgs.readQRCodeArgs(args)
         val deputyFileName = "jpg"
-        val outputFile = File("$fileName.$deputyFileName")
-        val qrCodeImage = createQRCode(contents, 120, 120, 0)
+        val outputFile = File(qrCodeArgs.fileName)
+        val qrCodeImage = createQRCode(qrCodeArgs)
 
         ImageIO.write(qrCodeImage, deputyFileName, outputFile)
     }
@@ -28,14 +28,14 @@ fun main (args: Array<String>) {
 }
 
 
-fun createQRCode(contents: String, width: Int, height: Int, margin: Int): BufferedImage {
-    val hints = qrCodeBaseSetting(margin)
+fun createQRCode(qrCodeArgs: QRCodeArgs): BufferedImage {
+    val hints = qrCodeBaseSetting(qrCodeArgs.margin, qrCodeArgs.errorCorrectionLevel)
     val format = BarcodeFormat.QR_CODE
 
     var bitMatrix: BitMatrix? = null
 
     try {
-        bitMatrix = MultiFormatWriter().encode(contents, format, width, height, hints)
+        bitMatrix = MultiFormatWriter().encode(qrCodeArgs.contents, format, qrCodeArgs.width, qrCodeArgs.height, hints)
 
     } catch (e: Exception) {
         e.printStackTrace()
@@ -46,12 +46,51 @@ fun createQRCode(contents: String, width: Int, height: Int, margin: Int): Buffer
     return MatrixToImageWriter.toBufferedImage(bitMatrix, config)
 }
 
-fun qrCodeBaseSetting (margin: Int): Map<EncodeHintType, Any> {
+fun qrCodeBaseSetting (margin: Int, errorCorrectionLevel: ErrorCorrectionLevel): Map<EncodeHintType, Any> {
     return mutableMapOf(
             EncodeHintType.CHARACTER_SET to CharacterSetECI.UTF8,
-            EncodeHintType.ERROR_CORRECTION to ErrorCorrectionLevel.L,
+            EncodeHintType.ERROR_CORRECTION to errorCorrectionLevel,
             EncodeHintType.MARGIN to margin
     )
 }
 
-fun <T> Array<T>.hasArgs(size: Int): Boolean = this.size == size
+fun <T> Array<T>.atLease(size: Int): Boolean = this.size >= size
+
+data class QRCodeArgs(
+        var fileName: String = "test.jpg",
+        var contents: String = "",
+        var width: Int = 120,
+        var height: Int = 120,
+        var margin: Int = 0,
+        var errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.L
+) {
+    fun readQRCodeArgs(args: Array<String>) {
+        val maxLength = args.size
+        for ((index, value) in args.withIndex()) {
+            when (index) {
+                maxLength - 1 -> { contents = value }
+                else -> {
+                    if (index > maxLength - 2) throw Exception("input error")
+                    val nextValue = args[index + 1]
+                    when (value.toLowerCase()) {
+                        "-n", "--name" -> { fileName = nextValue}
+                        "-w", "--width" -> { width = nextValue.toInt() }
+                        "-h", "--height" -> { height = nextValue.toInt() }
+                        "-m", "--margin" -> { margin = nextValue.toInt() }
+                        "-l", "--level" -> { errorCorrectionLevel = toErrorCorrectionLevel(nextValue) }
+                    }
+                }
+            }
+        }
+    }
+
+    private fun toErrorCorrectionLevel(nextValue: String): ErrorCorrectionLevel {
+        return when(nextValue.toUpperCase()) {
+            "L" -> ErrorCorrectionLevel.L
+            "M" -> ErrorCorrectionLevel.M
+            "Q" -> ErrorCorrectionLevel.Q
+            "H" -> ErrorCorrectionLevel.H
+            else -> throw Exception("level must be in (L,M,Q,H)")
+        }
+    }
+}

@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d234dc6a-ce2a-4334-ba9b-1d75325d0aeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/QRCodeBuilder.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/QRCodeBuilder.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/QRCodeBuilder.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainKt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="QRCodeBuilder" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="http://tw.google.com test" />
+      <option name="PROGRAM_PARAMETERS" value="-n test1.jpg -h 120 --w 120 -m 0 -l L &quot;YF451374581090109229400001a6000001a600000000054659473MWX0V8MFCSy38umgJ8eBDA==:**********:3:17:1:B0066-01:1:299&quot;" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -88,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566440356774</updated>
       <workItem from="1566440358024" duration="3328000" />
-      <workItem from="1578555409388" duration="1036000" />
+      <workItem from="1578555409388" duration="5170000" />
     </task>
     <task id="LOCAL-00001" summary="first step complete">
       <created>1566442779870</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566443218322</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create for Electronic invoice version">
+      <created>1578556645014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578556645014</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +119,42 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first step complete" />
     <MESSAGE value="complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete" />
+    <MESSAGE value="create for Electronic invoice version" />
+    <option name="LAST_COMMIT_MESSAGE" value="create for Electronic invoice version" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578560877248">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578560877248" />
+    <state x="253" y="52" key="CommitChangelistDialog2" timestamp="1578561082176">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="253" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1578561082176" />
+    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1578556706124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578556706124" />
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1578560885241">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578560885241" />
+    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1578560885239">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578560885239" />
+    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1578560885238">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578560885238" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1578560885240">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578560885240" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1578556650999">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578556650999" />
   </component>
   <component name="masterDetails">
     <states>
