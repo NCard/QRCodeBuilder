@@ -20,7 +20,7 @@ fun main (args: Array<String>) {
         val fileName = args[1]
         val deputyFileName = "jpg"
         val outputFile = File("$fileName.$deputyFileName")
-        val qrCodeImage = createQRCode(contents, 300, 300, 0)
+        val qrCodeImage = createQRCode(contents, 120, 120, 0)
 
         ImageIO.write(qrCodeImage, deputyFileName, outputFile)
     }
@@ -49,7 +49,7 @@ fun createQRCode(contents: String, width: Int, height: Int, margin: Int): Buffer
 fun qrCodeBaseSetting (margin: Int): Map<EncodeHintType, Any> {
     return mutableMapOf(
             EncodeHintType.CHARACTER_SET to CharacterSetECI.UTF8,
-            EncodeHintType.ERROR_CORRECTION to ErrorCorrectionLevel.H,
+            EncodeHintType.ERROR_CORRECTION to ErrorCorrectionLevel.L,
             EncodeHintType.MARGIN to margin
     )
 }
