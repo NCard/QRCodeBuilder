@@ -8,9 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d234dc6a-ce2a-4334-ba9b-1d75325d0aeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/QRCodeBuilder.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/QRCodeBuilder.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainKt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,11 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
@@ -87,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566440356774</updated>
       <workItem from="1566440358024" duration="3328000" />
-      <workItem from="1578555409388" duration="5170000" />
+      <workItem from="1578555409388" duration="7772000" />
     </task>
     <task id="LOCAL-00001" summary="first step complete">
       <created>1566442779870</created>
@@ -110,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578556645014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create for Electronic invoice version">
+      <created>1578561125089</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578561125089</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,111 +132,49 @@
     <option name="LAST_COMMIT_MESSAGE" value="create for Electronic invoice version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578560877248">
+    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578561736145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578560877248" />
-    <state x="253" y="52" key="CommitChangelistDialog2" timestamp="1578561082176">
+    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578561736145" />
+    <state x="457" y="240" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578563544504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="253" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1578561082176" />
+    <state x="457" y="240" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1578563544504" />
+    <state x="253" y="52" key="CommitChangelistDialog2" timestamp="1578561124925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="253" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1578561124925" />
     <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1578556706124">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578556706124" />
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1578560885241">
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom" timestamp="1578561545430">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578560885241" />
-    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1578560885239">
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578561545430" />
+    <state width="1398" height="243" key="GridCell.Tab.0.center" timestamp="1578561545428">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578560885239" />
-    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1578560885238">
+    <state width="1398" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578561545428" />
+    <state width="1398" height="243" key="GridCell.Tab.0.left" timestamp="1578561545427">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578560885238" />
-    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1578560885240">
+    <state width="1398" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578561545427" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right" timestamp="1578561545429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578560885240" />
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1578556650999">
+    <state width="1398" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578561545429" />
+    <state x="208" y="31" key="SettingsEditor" timestamp="1578563640209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578556650999" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>QRCodeBuilder:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578563640209" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1578561132231">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578561132231" />
+    <state x="507" y="325" key="classpath-attribute-editor" timestamp="1578562270456">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="507" y="325" key="classpath-attribute-editor/0.0.1440.900@0.0.1440.900" timestamp="1578562270456" />
   </component>
 </project>

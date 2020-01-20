@@ -18,8 +18,8 @@ fun main (args: Array<String>) {
         println("building")
         val qrCodeArgs = QRCodeArgs()
         qrCodeArgs.readQRCodeArgs(args)
-        val deputyFileName = "jpg"
-        val outputFile = File(qrCodeArgs.fileName)
+        val deputyFileName = ".jpg"
+        val outputFile = File(qrCodeArgs.fileName + deputyFileName)
         val qrCodeImage = createQRCode(qrCodeArgs)
 
         ImageIO.write(qrCodeImage, deputyFileName, outputFile)
