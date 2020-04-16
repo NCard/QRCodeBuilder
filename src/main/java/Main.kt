@@ -13,18 +13,24 @@ import javax.imageio.ImageIO
 import kotlin.Exception
 
 fun main (args: Array<String>) {
-    println("starting")
-    if (args.atLease(1)) {
-        println("building")
-        val qrCodeArgs = QRCodeArgs()
-        qrCodeArgs.readQRCodeArgs(args)
-        val deputyFileName = ".jpg"
-        val outputFile = File(qrCodeArgs.fileName + deputyFileName)
-        val qrCodeImage = createQRCode(qrCodeArgs)
+    try {
+        println("starting")
+        if (args.atLease(1)) {
+            println("building..")
+            val qrCodeArgs = QRCodeArgs()
+            qrCodeArgs.readQRCodeArgs(args)
+            val deputyFileName = ".jpg"
+            val outputFile = File(qrCodeArgs.fileName + deputyFileName)
+            val qrCodeImage = createQRCode(qrCodeArgs)
 
-        ImageIO.write(qrCodeImage, deputyFileName, outputFile)
+            ImageIO.write(qrCodeImage, deputyFileName, outputFile)
+        }
+        println("complete")
+    } catch (e: Exception) {
+        println("create fail")
+        e.printStackTrace()
     }
-    println("complete")
+
 }
 
 
