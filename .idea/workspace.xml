@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d234dc6a-ce2a-4334-ba9b-1d75325d0aeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +30,13 @@
   <component name="ProjectId" id="1W9IVWBMBAUgCJPhX3dtNYaMpHm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -47,7 +48,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="QRCodeBuilder" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="-n test1.jpg -h 120 --w 120 -m 0 -l L &quot;YF451374581090109229400001a6000001a600000000054659473MWX0V8MFCSy38umgJ8eBDA==:**********:3:17:1:B0066-01:1:299&quot;" />
@@ -65,18 +66,6 @@
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -125,6 +114,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first step complete" />
     <MESSAGE value="complete" />
@@ -132,10 +124,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="create for Electronic invoice version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578561736145">
+    <state x="175" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587028449761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="159" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1578561736145" />
+    <state x="175" y="224" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587028449761" />
     <state x="457" y="240" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578563544504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

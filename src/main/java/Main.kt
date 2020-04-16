@@ -9,8 +9,8 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
 import java.awt.Color
 import java.awt.image.BufferedImage
 import java.io.File
-import java.lang.Exception
 import javax.imageio.ImageIO
+import kotlin.Exception
 
 fun main (args: Array<String>) {
     println("starting")
@@ -30,7 +30,7 @@ fun main (args: Array<String>) {
 
 fun createQRCode(qrCodeArgs: QRCodeArgs): BufferedImage {
     val hints = qrCodeBaseSetting(qrCodeArgs.margin, qrCodeArgs.errorCorrectionLevel)
-    val format = BarcodeFormat.QR_CODE
+    val format = qrCodeArgs.format
 
     var bitMatrix: BitMatrix? = null
 
@@ -57,12 +57,13 @@ fun qrCodeBaseSetting (margin: Int, errorCorrectionLevel: ErrorCorrectionLevel):
 fun <T> Array<T>.atLease(size: Int): Boolean = this.size >= size
 
 data class QRCodeArgs(
-        var fileName: String = "test.jpg",
+        var fileName: String = "test",
         var contents: String = "",
         var width: Int = 120,
         var height: Int = 120,
         var margin: Int = 0,
-        var errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.L
+        var errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.L,
+        var format: BarcodeFormat = BarcodeFormat.QR_CODE
 ) {
     fun readQRCodeArgs(args: Array<String>) {
         val maxLength = args.size
@@ -77,20 +78,11 @@ data class QRCodeArgs(
                         "-w", "--width" -> { width = nextValue.toInt() }
                         "-h", "--height" -> { height = nextValue.toInt() }
                         "-m", "--margin" -> { margin = nextValue.toInt() }
-                        "-l", "--level" -> { errorCorrectionLevel = toErrorCorrectionLevel(nextValue) }
+                        "-l", "--level" -> { errorCorrectionLevel = ErrorCorrectionLevel.valueOf(nextValue) }
+                        "-t", "--type" -> { format = BarcodeFormat.valueOf(nextValue) }
                     }
                 }
             }
-        }
-    }
-
-    private fun toErrorCorrectionLevel(nextValue: String): ErrorCorrectionLevel {
-        return when(nextValue.toUpperCase()) {
-            "L" -> ErrorCorrectionLevel.L
-            "M" -> ErrorCorrectionLevel.M
-            "Q" -> ErrorCorrectionLevel.Q
-            "H" -> ErrorCorrectionLevel.H
-            else -> throw Exception("level must be in (L,M,Q,H)")
         }
     }
 }
