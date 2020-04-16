@@ -19,11 +19,10 @@ fun main (args: Array<String>) {
             println("building..")
             val qrCodeArgs = QRCodeArgs()
             qrCodeArgs.readQRCodeArgs(args)
-            val deputyFileName = ".jpg"
-            val outputFile = File(qrCodeArgs.fileName + deputyFileName)
+            val outputFile = File("${qrCodeArgs.fileName}.${qrCodeArgs.deputyFileName}")
             val qrCodeImage = createQRCode(qrCodeArgs)
 
-            ImageIO.write(qrCodeImage, deputyFileName, outputFile)
+            ImageIO.write(qrCodeImage, qrCodeArgs.deputyFileName, outputFile)
         }
         println("complete")
     } catch (e: Exception) {
@@ -65,6 +64,7 @@ fun <T> Array<T>.atLease(size: Int): Boolean = this.size >= size
 
 data class QRCodeArgs(
         var fileName: String = "test",
+        var deputyFileName: String = "jpg",
         var contents: String = "",
         var width: Int = 120,
         var height: Int = 120,
@@ -82,7 +82,7 @@ data class QRCodeArgs(
                     if (index > maxLength - 2) throw Exception("input error")
                     val nextValue = args[index + 1]
                     when (value.toLowerCase()) {
-                        "-n", "--name" -> { fileName = nextValue}
+                        "-n", "--name" -> { checkFileName(nextValue)}
                         "-w", "--width" -> { width = nextValue.toInt() }
                         "-h", "--height" -> { height = nextValue.toInt() }
                         "-m", "--margin" -> { margin = nextValue.toInt() }
@@ -92,5 +92,13 @@ data class QRCodeArgs(
                 }
             }
         }
+    }
+
+    private fun checkFileName(name: String) {
+        val split = name.split(".")
+        if (split.size > 1) {
+            fileName = split[0]
+            deputyFileName = split[split.size - 1]
+        } else fileName = name
     }
 }

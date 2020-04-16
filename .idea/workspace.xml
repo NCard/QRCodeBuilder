@@ -46,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="0e0e9eb29dffbaa93d344ea48de6ffb8dcc732b8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +75,7 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="QRCodeBuilder" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-n test01 -w 132 -h 77 -t CODE_128 11110363240FZF" />
+      <option name="PROGRAM_PARAMETERS" value="-n test02 -w 132 -h 77 -t CODE_128 11110363240FZF" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -145,13 +145,14 @@
     <MESSAGE value="first step complete" />
     <MESSAGE value="complete" />
     <MESSAGE value="create for Electronic invoice version" />
-    <option name="LAST_COMMIT_MESSAGE" value="create for Electronic invoice version" />
+    <MESSAGE value="add try" />
+    <option name="LAST_COMMIT_MESSAGE" value="add try" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587029187427">
+    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587029911157">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587029187427" />
+    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587029911157" />
     <state x="457" y="240" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578563544504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -164,22 +165,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578556706124" />
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1587029167588">
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1587029896665">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587029167588" />
-    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1587029167587">
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587029896665" />
+    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1587029896663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587029167587" />
-    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1587029167586">
+    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587029896663" />
+    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1587029896662">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587029167586" />
-    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1587029167588">
+    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587029896662" />
+    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1587029896664">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587029167588" />
+    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587029896664" />
     <state x="208" y="31" key="SettingsEditor" timestamp="1578563640209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
