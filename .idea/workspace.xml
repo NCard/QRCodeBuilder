@@ -5,6 +5,30 @@
       <artifact name="QRCodeBuilder:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:electronic_invoice" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d234dc6a-ce2a-4334-ba9b-1d75325d0aeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -52,8 +76,8 @@
       <module name="QRCodeBuilder" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="-n test01 -w 132 -h 77 -t CODE_128 11110363240FZF" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -124,10 +148,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="create for Electronic invoice version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587028617379">
+    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587029187427">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587028617379" />
+    <state x="253" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587029187427" />
     <state x="457" y="240" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578563544504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -140,22 +164,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1578556706124" />
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1587028632987">
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1587029167588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587028632987" />
-    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1587028632986">
+    <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587029167588" />
+    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1587029167587">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587028632986" />
-    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1587028632985">
+    <state width="1398" height="242" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587029167587" />
+    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1587029167586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587028632985" />
-    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1587028632986">
+    <state width="1398" height="242" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587029167586" />
+    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1587029167588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587028632986" />
+    <state width="1398" height="242" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587029167588" />
     <state x="208" y="31" key="SettingsEditor" timestamp="1578563640209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

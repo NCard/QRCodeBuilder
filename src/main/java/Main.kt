@@ -33,7 +33,7 @@ fun main (args: Array<String>) {
 
 }
 
-
+@Throws(Exception::class)
 fun createQRCode(qrCodeArgs: QRCodeArgs): BufferedImage {
     val hints = qrCodeBaseSetting(qrCodeArgs.margin, qrCodeArgs.errorCorrectionLevel)
     val format = qrCodeArgs.format
@@ -52,6 +52,7 @@ fun createQRCode(qrCodeArgs: QRCodeArgs): BufferedImage {
     return MatrixToImageWriter.toBufferedImage(bitMatrix, config)
 }
 
+@Throws(Exception::class)
 fun qrCodeBaseSetting (margin: Int, errorCorrectionLevel: ErrorCorrectionLevel): Map<EncodeHintType, Any> {
     return mutableMapOf(
             EncodeHintType.CHARACTER_SET to CharacterSetECI.UTF8,
@@ -71,6 +72,7 @@ data class QRCodeArgs(
         var errorCorrectionLevel: ErrorCorrectionLevel = ErrorCorrectionLevel.L,
         var format: BarcodeFormat = BarcodeFormat.QR_CODE
 ) {
+    @Throws(Exception::class)
     fun readQRCodeArgs(args: Array<String>) {
         val maxLength = args.size
         for ((index, value) in args.withIndex()) {
